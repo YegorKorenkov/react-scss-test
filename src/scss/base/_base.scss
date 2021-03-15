@@ -20,6 +20,37 @@ h1, h2, h3, h4 {
     font-weight: 500;
 }
 
+h2 {
+    font-size: 45px;
+
+    @include _992 {
+        font-size: 40px !important;
+        
+    }
+
+    @include _768 {
+        font-size: 35px !important;
+        line-height: 44px;
+    }
+}
+
+h3 {
+
+    font-size: 27px;
+
+    @include _1200 {
+        font-size: 22px !important;
+    }
+
+    @include _992 {
+        font-size: 24px !important;
+    }
+
+    @include _768 {
+        font-size: 27px !important;
+    }
+}
+
 p {
     font-size: 14px;
     color: #7f7a7a;

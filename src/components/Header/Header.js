@@ -1,6 +1,9 @@
 import React from 'react';
+
 import MenuItem from './MenuItem';
 import Search from './Search';
+import BurgerMenu from './BurgerMenu';
+
 import logo from "../../assets/images/logo.png";
 
 const menuItemData = [
@@ -68,7 +71,7 @@ const Header = () => {
                     </div>
 
                     <div className="header__search-container align-items-center">
-                        <div>
+                        <div className="header-right">
                             <div className="input-container">
                                 <Search />
                             </div>
@@ -76,6 +79,10 @@ const Header = () => {
                             <div className="header-btn">
                                 <a href="#" className="btn">Admission now</a>
                             </div>
+
+                            <BurgerMenu 
+                                menuItemData={menuItemData}
+                            />
                         </div>   
                     </div>
                 </div>

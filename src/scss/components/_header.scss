@@ -1,31 +1,59 @@
 .header {
     padding: 0;
 
+    @include _992 {
+        padding: 35px 0;
+    }
+
     &-btn {
         float: right;
         margin-left: 20px;
         display: block;
 
+        @include _1200 {
+            margin-left: 0;
+        }
+
+        @include _992 {
+            display: none !important;
+        }
     }
 }
 
 .header__logo-img {
 
     img {
-        width: 140px;
+        width: 160px;
+
+        @include _1200 {
+            width: 140px;
+        }
     }
 }
 
 .header__menu-container {
 
     nav {
+
+        @include _992 {
+            display: none !important;
+        }
+
         display: block;
         padding: 15px 0;
 
             ul li {
                 display: inline-block;
                 position: relative;
-                margin-right: 35px;
+                &:not(:last-child) {
+                    margin-right: 16px !important;   
+                }
+
+                &:not(:last-child) {
+                   @include _1200 {
+                       margin-right: 25px !important;
+                   }   
+                }
                 
                 .menu-item {
                     display: block;
@@ -60,8 +88,6 @@
                 .menu-item.active::before {
                     opacity: 1;
                 }
-        
-                
         
                 .submenu {
                     position: absolute;
@@ -122,12 +148,24 @@
 }
 
 .header__search-container {
+
+    .header-right {
+
+        div {
+            position: relative;
+        }
+    }
     
     .input-container {
         position: relative;
         padding: 0;
         float: left;
         display: block;
+
+        @include _1224 {
+            display: none !important;
+        }
+
 
         form {
 
@@ -149,6 +187,10 @@
                 font-size: inherit;
                 line-height: inherit;
                 font-weight: 400;
+
+                @include _1500 {
+                    max-width: 250px;
+                }
             }
             
             button {

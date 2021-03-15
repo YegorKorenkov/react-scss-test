@@ -3,7 +3,8 @@
 
     h3 {
         font-size: 24px;
-            margin-bottom: 27px;
+        margin-bottom: 27px;
+        text-align: center;
     }
 
     .footer__widget {
@@ -41,6 +42,7 @@
                     border-radius: 50%;
                     -webkit-border-radius: 50%;
                     transition: all .3s;
+
         
                     &:hover {
                         background-color: $color-yellow-light;
@@ -53,6 +55,11 @@
         &--event {
             padding-top: 80px;
             margin-bottom: 40px;
+
+            @include _768 {
+                padding-top: 0px;
+                margin-top: -50px;
+            }
     
             li {
                 margin-bottom: 12px;
@@ -62,6 +69,10 @@
                     display: inline-block;
                     padding-left: 20px;
                     position: relative;
+
+                    i {
+                        padding-right: 8px;
+                    }
                 }
             }
         }
@@ -70,6 +81,11 @@
             padding-top: 80px;
             margin-left: -35px;
             margin-bottom: 40px;
+
+            @include _768 {
+                margin-left: 0px;
+                padding-top: 0px;
+            }
     
             h3 {
                 font-size: 24px;
@@ -102,6 +118,10 @@
             padding-top: 80px;
             margin-bottom: 40px;
                 
+            @include _768 {
+                padding-top: 10px;
+            }
+
             img {
                 width: 100%;      
             }    

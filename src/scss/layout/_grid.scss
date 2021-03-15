@@ -4,8 +4,20 @@
     grid-template-rows: repeat(22, 0.65vw);
     grid-gap: 1.5rem; 
 
+    @include _768 {
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(10, 0.65vw);
+        grid-gap: 0;
+    }
+
     &__item {
-      position: relative;
+        position: relative;
+
+        @include _768 {
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
     }
 
     &__img {
@@ -19,26 +31,41 @@
     &__item--1 {
         @include item-grid(1, 9, 1, 13);
 
+        @include _768 {
+            @include item-grid(1, 4, 1, 20);
+        }
     }
 
     &__item--2 {
         @include item-grid(9, 25, 1, 13);
 
+        @include _768 {
+            @include item-grid(1, 4, 21, 37);
+        }
     }
 
     &__item--3 {
         @include item-grid(1, 9, 13, 23);
-
+        
+        @include _768 {
+            @include item-grid(1, 4, 37, 57);
+        }
     }
 
     &__item--4 {
         @include item-grid(9, 17, 13, 23);
-
+        
+        @include _768 {
+            @include item-grid(1, 4, 57, 77);
+        }
     }
 
     &__item--5 {
         @include item-grid(17, 25, 13, 23);
 
+        @include _768 {
+            @include item-grid(1, 4, 77, 97);
+        }
     }
 }
   

@@ -1,8 +1,10 @@
 @import "abstracts/mixins";
 @import "abstracts/variables";
+@import "abstracts/media_mixin";
 
 @import "base/base";
 @import "base/utilities";
+@import "base/responsive";
 
 @import "layout/flex";
 @import "layout/grid";
@@ -15,6 +17,8 @@
 @import "components/button";
 @import "components/gallery";
 @import "components/footer";
+
+@import "components/burger-menu";
 
 @import "../assets/themify-icons-font/themify-icons/themify-icons";
 

@@ -1,0 +1,141 @@
+.bm-item {
+    display: inline-block;
+  
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: #d1d1d1;
+    transition: color 0.2s;
+  }
+  
+  .bm-item:hover {
+    color: white;
+  }
+  
+.bm-burger-button {
+    position: absolute;
+    width: 36px;
+    height: 30px;
+    right: 10px;
+    top: 0;
+    display: none;
+
+    @include _992 {
+        display: block !important;
+    }
+}
+  
+.bm-burger-bars {
+    background: #373a47;
+    height: 10% !important;
+}
+
+
+.bm-cross-button {
+    height: 24px;
+    width: 24px;
+    position: fixed !important;
+}
+  
+
+.bm-cross {
+    background: $color-black;
+    width: 2px !important;
+    height: 18px !important;
+}
+  
+
+.bm-menu-wrap {
+    position: fixed;
+    left: 0;
+    top: 0;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.bm-menu {
+    background: #fff;
+    padding: 3.5em 1.5em 0;
+    font-size: 1.15em;
+}
+  
+
+.bm-morph-shape {
+    fill: #373a47;
+}
+  
+  
+.bm-item-list {
+    color: #b8b7ad;
+
+    .burger-menu__link {
+        display: block;
+        position: relative;
+        text-transform: uppercase;
+        padding: 13px 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+
+        i {
+            font-size: 11px;
+            font-weight: 600;
+            position: absolute;
+            top: 40%;
+            right: 0;
+            transition: all .4s;
+        }
+    }
+
+    a.clicked  i {
+        transform: rotate(90deg);
+    }
+}
+
+
+.bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.burger-menu__item {
+    color: black;
+}
+
+.burger-menu__submenu {
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s;
+    height: 0;
+    width: 0;
+    transition:
+        opacity 0.4s ease-in 0.5s,
+        height 0.4s ease;
+}
+
+.visible-burger-submenu {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    height: auto;
+    width: 100%;
+
+    li {
+        i {
+            font-size: 8px;
+            margin-right: 5px;
+            border-radius: 50%;
+            height: 1px;
+            width: 1px;
+
+        }
+
+        padding: 10px 0;
+        padding-left: 20px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        display: block;
+
+        &:hover i {
+            background-color: #424346;
+            color: #424346;
+        }
+    }
+}

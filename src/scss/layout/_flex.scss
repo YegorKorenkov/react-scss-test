@@ -1,9 +1,3 @@
-.container {
-    width: 100%;
-    padding: 0 15px;
-    margin: 0 auto;
-}
-
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -19,6 +13,7 @@
     flex: 0 0 16.666667%;
     max-width: 16.666667%;
     @include column;
+
 }
 
 .header__menu-container {
@@ -27,6 +22,11 @@
     max-width: 41.666667%;
     display: block;
     @include column;
+
+    @include _1200 {
+        flex: 0 0 58.33%;
+        max-width: 58.33%;
+    }
 }
 
 .header__search-container {
@@ -37,24 +37,65 @@
     justify-content: flex-end;
     -webkit-box-pack: end;
     @include column;
+
+    @include _1200 {
+        flex: 0 0 25%;
+        max-width: 25%
+    }
 }
 
 // FEATURES SECTION
 
 .feature-area__item {
     -webkit-box-flex: 0;
-    flex: 0 0 25%;
-    max-width: 25%;
+    
     @include column;
+
+    @include _1201_and_higher {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    @include _1200 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    @include _992 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    @include _768 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
 }
 
 // COUNTER SECTION
 
 .counter__item {
     -webkit-box-flex: 0;
-    flex: 0 0 25%;
-    max-width: 25%;
     @include column;
+
+    @include _1201_and_higher {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    @include _1200 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    @include _992 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    @include _768 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
 
 // CLASSES SECTION
@@ -64,6 +105,51 @@
     flex: 0 0 50%;
     max-width: 50%;
     @include column;
+
+    @include _992 {
+        flex: 0 0 66.67%;
+        max-width: 66.67%;
+    }
+
+    @include _768 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+}
+
+.classes-container__btn {
+    -webkit-box-flex: 0;
+    flex: 0 0 50%;
+    max-width: 50%;
+    @include column;
+
+    @include _992 {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+
+    @include _768 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.classes__col {
+    -webkit-box-flex: 0;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    @include column;
+
+    @include _992 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    @include _768 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
 
 // GALLERY SECTION
@@ -77,40 +163,49 @@
 
 // FOOTER SECTION
 
-.footer__first-col {
+.footer__col--left {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 33.333333%;
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
+    -ms-flex: 0 0 33.33%;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
     @include column;
+
+    @include _992 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    @include _768 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
 
-.footer__second-col {
+.footer__col {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 16.666667%;
-    flex: 0 0 16.666667%;
-    max-width: 16.666667%;
+    -ms-flex: 0 0 16.67%;
+    flex: 0 0 16.67%;
+    max-width: 16.67%;
     @include column;
+
+    &:not(:last-child) {
+        @include _1200 {
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+    }
+
+    @include _992 {
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+    } 
+
+    @include _768 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
 }
 
-.footer__third-col {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 16.666667%;
-    flex: 0 0 16.666667%;
-    max-width: 16.666667%;
-    margin-left: 8%;
-    padding-right: 0 !important;
-    @include column;
-}
-
-.footer__fourth-col {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 16.666667%;
-    flex: 0 0 16.666667%;
-    max-width: 16.666667%;
-    margin-left: 8%;
-    @include column;
-}
 
 .photo-container {
 
@@ -126,4 +221,5 @@
         position: relative;
     }
 }
+
 

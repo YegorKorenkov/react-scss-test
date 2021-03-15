@@ -32,7 +32,7 @@ const Classes = () => {
                             </div>
 
                         </div>
-                        <div className="classes-container__title">
+                        <div className="classes-container__btn">
                             <div className="classes__btn">
                                 <a href="#" className="btn">See All Class</a>
                             </div>    
@@ -42,7 +42,7 @@ const Classes = () => {
                     <div className="row">
                         <div className="classes__col">
                             <div className="classes__item">
-                                <div className="classes-img">
+                                <div className="classes__img">
                                     <img src={classesImg1} alt="Class Image" />
                                 </div>
                                 <div className="classes__text">

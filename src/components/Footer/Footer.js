@@ -12,7 +12,7 @@ const Footer = () => {
         <footer className="footer-area">
             <div className="container max-width">
                 <div className="row">
-                    <div className="footer__first-col">
+                    <div className="footer__col--left">
                         <div className="footer__widget--left">
                             <div className="footer__logo">
                                 <img src={logo} alt="Footer logo" />
@@ -32,7 +32,7 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="footer__second-col">
+                    <div className="footer__col footer-mr">
                         <div className="footer__widget--event">
                             <h3>Event Activities</h3>
                             <ul className="footer__links">
@@ -76,7 +76,7 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="footer__third-col">
+                    <div className="footer__col footer-mr">
                         <div className="footer__widget--contact">
                             <h3>Contact With Us</h3>
                             <ul>
@@ -104,7 +104,7 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="footer__fourth-col">
+                    <div className="footer__col">
                         <div className="footer__widget--photo">
                             <h3>Photo Showcase</h3>
                             <div className="photo-container">
