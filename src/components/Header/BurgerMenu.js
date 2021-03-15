@@ -3,14 +3,14 @@ import {slide as Menu} from 'react-burger-menu';
 
 const BurgerMenu = ({ menuItemData }) => {
 
-    const [isVisible, setVisibility] = React.useState(null);
+    const [visibleId, setVisibleId] = React.useState(null);
 
     const onSetVisibility = (id) => {
-        if (id === isVisible) {
-            setVisibility(null);
+        if (id === visibleId) {
+            setVisibleId(null);
         }
         else {
-            setVisibility(id)
+            setVisibleId(id)
         }
         console.log(isVisible)
     }
@@ -22,14 +22,14 @@ const BurgerMenu = ({ menuItemData }) => {
                     <>
                         <a 
                             onClick={() => onSetVisibility(id)} 
-                            className={`burger-menu__link ${isVisible === id ? 'clicked' : ''}`}
+                            className={`burger-menu__link ${visibleId === id ? 'clicked' : ''}`}
                             key={id}
                         >{Object.keys(item).join()}
                             { Object.values(item)[0] ? <i className="ti-angle-right"></i> : ''}
                         </a>
                         {
                             Object.values(item)[0] 
-                            ?   <ul className={`burger-menu__submenu ${isVisible === id ? 'visible-burger-submenu' : ''}`}>
+                            ?   <ul className={`burger-menu__submenu ${visibleId === id ? 'visible-burger-submenu' : ''}`}>
                                     { Object.values(item)[0].map((item, key) => <li 
                                         key={key}>
                                             <i className={"ti-control-record"}></i><a href="#">{item}</a>
