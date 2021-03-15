@@ -1,0 +1,32 @@
+.counter-area {
+    background: $color-counter-area;
+    position: relative;
+    padding-top: 120px;
+    padding-bottom: 60px;
+
+}
+
+.counter__item {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.counter__text {
+
+    h3 {
+        font-size: 60px;
+        color: #fff;
+        margin-bottom: 0px;
+        line-height: 50px;
+
+        .plus {
+            font-size: 20px;
+        }
+    }
+
+    p {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+}

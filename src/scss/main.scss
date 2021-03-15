@@ -1,0 +1,22 @@
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/base";
+@import "base/utilities";
+
+@import "layout/flex";
+@import "layout/grid";
+
+
+@import "components/header";
+@import "components/feature";
+@import "components/counter";
+@import "components/classes";
+@import "components/button";
+@import "components/gallery";
+@import "components/footer";
+
+@import "../assets/themify-icons-font/themify-icons/themify-icons";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');

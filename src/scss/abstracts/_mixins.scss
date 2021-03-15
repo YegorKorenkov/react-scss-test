@@ -1,0 +1,14 @@
+@mixin column {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@mixin item-grid($col-start, $col-end, $row-start, $row-end) {
+    grid-column-start: $col-start;
+    grid-column-end: $col-end;
+    grid-row-start: $row-start;
+    grid-row-end: $row-end;
+}

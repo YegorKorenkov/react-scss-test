@@ -1,0 +1,129 @@
+.container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+
+// HEADER
+
+.header__logo-container {
+    -webkit-box-flex: 0;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+    @include column;
+}
+
+.header__menu-container {
+    -webkit-box-flex: 0;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+    display: block;
+    @include column;
+}
+
+.header__search-container {
+    display: flex;
+    -webkit-box-flex: 0;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+    justify-content: flex-end;
+    -webkit-box-pack: end;
+    @include column;
+}
+
+// FEATURES SECTION
+
+.feature-area__item {
+    -webkit-box-flex: 0;
+    flex: 0 0 25%;
+    max-width: 25%;
+    @include column;
+}
+
+// COUNTER SECTION
+
+.counter__item {
+    -webkit-box-flex: 0;
+    flex: 0 0 25%;
+    max-width: 25%;
+    @include column;
+}
+
+// CLASSES SECTION
+
+.classes-container__title {
+    -webkit-box-flex: 0;
+    flex: 0 0 50%;
+    max-width: 50%;
+    @include column;
+}
+
+// GALLERY SECTION
+
+.gallery__menu-container {
+    -webkit-box-flex: 0;
+    flex: 0 0 100%;
+    max-width: 100%;
+    @include column;
+}
+
+// FOOTER SECTION
+
+.footer__first-col {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    @include column;
+}
+
+.footer__second-col {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+    @include column;
+}
+
+.footer__third-col {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+    margin-left: 8%;
+    padding-right: 0 !important;
+    @include column;
+}
+
+.footer__fourth-col {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 16.666667%;
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+    margin-left: 8%;
+    @include column;
+}
+
+.photo-container {
+
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -3px;
+
+    .photo {
+        flex: 50%;
+        max-width: 50%;
+        margin-bottom: 10px;
+        padding: 0px 4px;
+        position: relative;
+    }
+}
+

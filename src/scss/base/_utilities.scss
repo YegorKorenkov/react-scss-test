@@ -1,0 +1,18 @@
+.align-items-center {
+    -webkit-box-align: center!important;
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
+
+.max-width {
+    max-width: 1200px;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.visible {
+    opacity: 1 !important;
+    transform: translate(0px) !important;
+}
